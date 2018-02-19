@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding 0;
+}
+
+/* #map {
+  height: 100%;
+} */
+
+.col-xs-2 {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.input-group {
+  padding-bottom: 20px;
+}

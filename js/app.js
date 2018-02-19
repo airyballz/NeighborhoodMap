@@ -47,7 +47,7 @@ var Location = function (data) {
   function makeInfoWindow(marker, infoWindow) {
 
     // adds in animation when clicked
-    if (marker.getAnimation() != null) {
+    if (marker.getAnimation() !== null) {
       marker.setAnimation(null);
     } 
     else {
@@ -72,7 +72,7 @@ var Location = function (data) {
 
   self.bounceMarker = function() {
     google.maps.event.trigger(this.marker, 'click');
-  }
+  };
 
 };
 

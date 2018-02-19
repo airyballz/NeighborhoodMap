@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <head>
+    <title>Friend Locations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Loads CSS Librairies -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Load JS Librairies -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js'></script>
+
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="input-group">
+            <input data-bind="textInput: filter, valueUpdate: 'afterkeydown'" type="text" class="form-control" placeholder="Search...">
+          </div><!-- /input-group -->
+          <ul class="list-group" data-bind="foreach: filteredList">
+            <li data-bind="click: bounceMarker, text: title" class="list-group-item"></li>
+          </ul>
+        </div>
+        <div class="col-xs-9">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // Sets height for map with bootstrap
+      function setHeight() {
+        windowHeight = $(window).innerHeight();
+        $('#map').css('min-height', windowHeight );
+      };
+
+      setHeight();
+      $(window).resize(function() {
+        setHeight();
+      });      
+    </script>
+
+    <!-- Loads Google Maps API with initMap function -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1JAhYXvPzBbdFaYhFwgwUVKMPAy6OHGM&v=3&callback=mapStart"></script>
+
+    <!-- Loads APP js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

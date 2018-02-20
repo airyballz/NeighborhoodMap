@@ -133,7 +133,12 @@ function mapStart() {
 
     })
   .fail(function() {
-      alert("API did not load. Please try again.");
+      alert("jsonBlob API did not load. Please try again.");
   });
 
+}
+
+//Start App 
+function mapError() {
+  alert("Google Map API did not load. Please try again.");
 }

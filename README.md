@@ -22,5 +22,5 @@ Google Maps API is used here to show the map and generate the markers etc.
 JSONBLOB in order to save marker data online in json format in order to be completly autonomouos .
 
 ## Resources
-https://www.google.com/maps
-https://jsonblob.com/
+- https://www.google.com/maps
+- https://jsonblob.com/

@@ -1,6 +1,9 @@
 # NeighborhoodMap
 This app is to demonstrate the ability to use a js framework (`knockout.js`) & Google Maps API.
 
+(View live page)
+https://airyballz.github.io/NeighborhoodMap/
+
 ## Code
 CSS
 

@@ -138,7 +138,7 @@ function mapStart() {
 
 }
 
-//Start App 
+//MapError message
 function mapError() {
   alert("Google Map API did not load. Please try again.");
 }
